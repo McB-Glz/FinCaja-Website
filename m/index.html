@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fincaja</title>
+<link href="mestilos.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="imgs/png" href="img/fav.png">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+  var ancho = $(window).width();
+  var alto = $(window).height();
+
+  if (ancho > alto){
+      $('#hm').addClass('home1');
+  }else{
+      $('#hm').removeClass('home1');
+      $('.home').css('width', ancho);
+      $('.home').css('height', alto);
+      $('#footer').css('height','6%');
+  }
+
+    $(window).resize(function() { 
+    
+    location.reload();
+        
+    });
+
+})
+</script>
+</head>
+
+<body id="hm" class="home">
+	<div id="container">
+		<div id="home">
+			<a href="quienes.html">
+			<img src="img/logo_home.png">
+			</a>
+		</div>
+	</div>
+	<div id="footer">
+		<div style="width:100%; margin:0 auto;">
+			<div class="footer"><p>Bosque de Cidros 54 Int. 302 B, Bosques de las Lomas, Cuajimalpa C.P. 05120, México D.F. Tel. <a href="tel:5552508887">(55) 5250 8887</a></br>
+			Copyright 2014 © FinCaja Todos los Derechos Reservados</p>
+			</div>
+			<div class="social">
+				SÍGUENOS<br/>
+				<a href="https://www.facebook.com/fincaja.com.mx" target="_blank"><img src="img/btn_fb.png"></a>
+				<a href="http://www.linkedin.com/company/3631285?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A1958045331394215764744%2CVSRPtargetId%3A3631285%2CVSRPcmpt%3Aprimary" target="_blank"><img src="img/btn_in.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fincaja</title>
+<link href="mestilos.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="imgs/png" href="img/fav.png">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+  var ancho = $(window).width();
+  var alto = $(window).height();
+
+  if (ancho > alto){
+      $('#qn').addClass('quienes1');
+  }else{
+      $('#qn').removeClass('quienes1');
+      $('.quienes').css('width', ancho);
+      $('.quienes').css('height', alto);
+      $('#footer').css('height','6%');
+  }
+
+    $(window).resize(function() { 
+    
+   	 location.reload();
+
+
+    });
+
+})
+</script>
+</head>
+
+<body id="qn" class="quienes">
+	<div id="container">
+		<div id="logo">
+			<a href="quienes.html"><img src="img/logo.png"></a>
+		</div>
+		<div id="menu">
+				<ul>
+					<li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+					<li><a href="empresario.html">EMPRESARIO</a></li>
+					<li><a href="trabajador.html">TRABAJADOR</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+		</div>
+		<div id="quienes">
+			<p>Inicia sus operaciones con la finalidad de otorgar microcréditos con descuentos vía nómina a trabajadores de empresas privadas, para que ellos(as) puedan cubrir emergencias y satisfacer sus necesidades inmediatas.
+			</p>
+			<h3 class="azul01">VISIÓN</h3>
+			<p style="padding:0 0 0 70px;">Ser la institución preferida por nuestros clientes, inversionistas y colaboradores.</p>
+			<h3 class="azul02">MISIÓN</h3>
+			<p style="padding:0 0 0 70px;"> Ofrecer microcréditos con soluciones personalizadas, bajo los mejores estándares de servicio y cultura financiera.</p>
+		</div>		
+	</div>
+	<div id="footer">
+		<div style="width:100%; margin:0 auto;">
+			<div class="footer"><p>Bosque de Cidros 54 Int. 302 B, Bosques de las Lomas, Cuajimalpa C.P. 05120, México D.F. Tel. <a href="tel:5552508887">(55) 5250 8887</a></br>
+			Copyright 2014 © FinCaja Todos los Derechos Reservados</p>
+			</div>
+			<div class="social">
+				SÍGUENOS<br/>
+				<a href="https://www.facebook.com/fincaja.com.mx" target="_blank"><img src="img/btn_fb.png"></a>
+				<a href="http://www.linkedin.com/company/3631285?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A1958045331394215764744%2CVSRPtargetId%3A3631285%2CVSRPcmpt%3Aprimary" target="_blank"><img src="img/btn_in.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

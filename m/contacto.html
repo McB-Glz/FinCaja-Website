@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fincaja</title>
+<link href="mestilos.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="imgs/png" href="img/fav.png">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+  var ancho = $(window).width();
+  var alto = $(window).height();
+
+  if (ancho > alto){
+      $('#ct').addClass('contacto1');
+  }else{
+      $('#ct').removeClass('contacto1');
+      $('.contacto').css('width', ancho);
+      $('.contacto').css('height', alto);
+      $('#footer').css('height','6%');
+  }
+
+    $(window).resize(function() { 
+    
+    var altoPantalla = $(this).height();
+    var anchoPantalla = $(this).width();
+
+    if (anchoPantalla > altoPantalla){
+      $('#ct').addClass('contacto1');
+      $('#contacto').css('margin-top','25%');
+  }else{
+      $('#ct').removeClass('contacto1');
+      $('.contacto').css('width', anchoPantalla);
+      $('.contacto').css('height', altoPantalla);
+      $('#footer').css('height','6%');
+  }
+        
+    });
+
+})
+</script>
+</head>
+
+<body id="ct" class="contacto">
+	<div id="container">
+		<div id="logo">
+			<a href="quienes.html"><img src="img/logo.png"></a>
+		</div>
+		<div id="menu">
+				<ul>
+					<li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+					<li><a href="empresario.html">EMPRESARIO</a></li>
+					<li><a href="trabajador.html">TRABAJADOR</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+		</div>
+		<div id="contacto" >
+			<form id="contact-form" action="email.php" method="post" name="form_contacto" target="_blank">
+				<div id="uno" class="uno">
+				    <label><strong>Nombre</strong> </label>
+				    <div>
+				      <input class="input-xlarge" type="text" name="nombre" id="nombre" value="" />
+				    </div>
+				    <label><strong>Correo electrónico</strong> </label>
+				    <div >
+				      <input class="input-xlarge" type="text" name="email" id="email" value="" />
+				    </div>
+				    <div id="edad">
+				    	<div>
+				    		<label><strong>Edad</strong></label>
+				    	</div>
+				    	<div>
+					    	<select name="age" id="age">
+					    		<option selected value="">-Selecciona tu edad-</option>
+					    		<option value="18 años">18 años</option>
+					    		<option value="19 años">19 años</option>
+					    		<option value="20 años">20 años</option>
+					    		<option value="21 años">21 años</option>
+					    		<option value="22 años">22 años</option>
+					    		<option value="23 años">23 años</option>
+					    		<option value="24 años">24 años</option>
+					    		<option value="25 años">25 años</option>
+					    		<option value="26 años">26 años</option>
+					    		<option value="27 años">27 años</option>
+					    		<option value="28 años">28 años</option>
+					    		<option value="29 años">29 años</option>
+					    		<option value="30 años">30 años</option>
+					    		<option value="31 años">31 años</option>
+					    		<option value="32 años">32 años</option>
+					    		<option value="33 años">33 años</option>
+					    		<option value="34 años">34 años</option>
+					    		<option value="35 años">35 años</option>
+					    		<option value="36 años">36 años</option>
+					    		<option value="37 años">37 años</option>
+					    		<option value="38 años">38 años</option>
+					    		<option value="39 años">39 años</option>
+					    		<option value="40 años">40 años</option>
+					    		<option value="41 años">41 años</option>
+					    		<option value="42 años">42 años</option>
+					    		<option value="43 años">43 años</option>
+					    		<option value="44 años">44 años</option>
+					    		<option value="45 años">45 años</option>
+					    		<option value="46 años">46 años</option>
+					    		<option value="47 años">47 años</option>
+					    		<option value="48 años">48 años</option>
+					    		<option value="49 años">49 años</option>
+					    		<option value="50 años">50 años</option>
+					    		<option value="51 años">51 años</option>
+					    		<option value="52 años">52 años</option>
+					    		<option value="53 años">53 años</option>
+					    		<option value="54 años">54 años</option>
+					    		<option value="55 años">55 años</option>
+					    		<option value="56 años">56 años</option>
+					    		<option value="57 años">57 años</option>
+					    		<option value="58 años">58 años</option>
+					    		<option value="59 años">59 años</option>
+					    		<option value="60 años">60 años</option>
+					    		<option value="60 años">61 años</option>
+					    		<option value="60 años">62 años</option>
+					    		<option value="60 años">63 años</option>
+					    		<option value="60 años">64 años</option>
+					    		<option value="60 años">65 años</option>
+					    	</select>
+					    </div>
+				    </div>
+				    <div id="ciudad">
+				    	<div>
+				    		<label><strong>Estado</strong></label>
+				    	</div>
+				    	<div>
+					    	<select id="city" name="city">
+					    		<option selected value="" >-Selecciona tu Estado-</option>
+					    		<option value="Aguascalientes">Aguascalientes</option>
+					    		<option value="Baja California">Baja California</option>
+					    		<option value="Baja California Sur">Baja California Sur</option>
+					    		<option value="Campeche">Campeche</option>
+					    		<option value="Coahuila de Zaragoza">Coahuila de Zaragoza</option>
+					    		<option value="Colima">Colima</option>
+					    		<option value="Chiapas">Chiapas</option>
+					    		<option value="Chihuahua">Chihuahua</option>
+					    		<option value="Distrito Federal">Distrito Federal</option>
+					    		<option value="Durango">Durango</option>
+					    		<option value="Estado de México">Estado de México</option>
+					    		<option value="Guanajuato">Guanajuato</option>
+					    		<option value="Guerrero">Guerrero</option>
+					    		<option value="Hidalgo">Hidalgo</option>
+					    		<option value="Jalisco">Jalisco</option>
+					    		<option value="Michoacán de Ocampo">Michoacán de Ocampo</option>
+					    		<option value="Morelos">Morelos</option>
+					    		<option value="Nayarit">Nayarit</option>
+					    		<option value="Nuevo León">Nuevo León</option>
+					    		<option value="Oaxaca">Oaxaca</option>
+					    		<option value="Puebla">Puebla</option>
+					    		<option value="Querétaro">Querétaro</option>
+					    		<option value="Quintana Roo">Quintana Roo</option>
+					    		<option value="San Luis Potosí">San Luis Potosí</option>
+					    		<option value="Sinaloa">Sinaloa</option>
+					    		<option value="Sonora">Sonora</option>
+					    		<option value="Tabasco">Tabasco</option>
+					    		<option value="Tamaulipas">Tamaulipas</option>
+					    		<option value="Tlaxcala">Tlaxcala</option>
+					    	</select>
+					    </div>
+				    </div>
+				    <div id="sexo">
+				    	<label style="margin:0 20px 0 0;"><strong>Sexo</strong></label>
+				    	<input type="radio" name="sex" value="Masculino">Masculino
+				    	<input type="radio" name="sex" value="Femenino">Femenino
+				    </div>
+				    <div>
+				    	<label><strong>Ocupación</strong></label>
+				      <input class="input-xlarge" type="text" name="ocu" id="ocu" value="" />
+				    </div>
+				</div>
+				<div id="cnt" class="cnt">
+					<label><strong>Asunto</strong> </label>
+				    <div>
+				      <input class="input-xlarge" type="text" name="asunto" id="asunto" value="" />
+				    </div>
+				    <label><strong>Mensaje</strong></label>
+				    <div>
+				      <textarea class="input-xxlarge" name="mensaje" id="mensaje" rows="8" cols="25"></textarea>
+				    </div>
+				    <div id="btn">
+				      <button class="btn" type="submit" name="enviar" id="enviar">Mándanos Tu Mensaje</button>
+				    </div>
+				</div>
+			</form>
+		</div>		
+	</div>
+	<div id="footer">
+		<div style="width:100%; margin:0 auto;">
+			<div class="footer"><p>Bosque de Cidros 54 Int. 302 B, Bosques de las Lomas, Cuajimalpa C.P. 05120, México D.F. Tel. <a href="tel:5552508887">(55) 5250 8887</a></br>
+			Copyright 2014 © FinCaja Todos los Derechos Reservados</p>
+			</div>
+			<div class="social">
+				SÍGUENOS<br/>
+				<a href="https://www.facebook.com/fincaja.com.mx" target="_blank"><img src="img/btn_fb.png"></a>
+				<a href="http://www.linkedin.com/company/3631285?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A1958045331394215764744%2CVSRPtargetId%3A3631285%2CVSRPcmpt%3Aprimary" target="_blank"><img src="img/btn_in.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

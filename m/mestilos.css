@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* fonts */
+
+@font-face {
+font-family: 'nexa';
+    src: url('fonts/NexaLight.otf');
+}
+
+@font-face {
+font-family: 'nexabold';
+    src: url('fonts/NexaBold.otf');
+}
+
+/* fonts */
+
+body{
+	margin: 0 auto;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 24px;
+}
+
+
+.especial{
+	font-weight: 400;
+}
+
+strong{
+	font-weight: 400;
+}
+
+#container{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.home{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.home1{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+.quienes{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_quienes.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.quienes1{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_quienes.jpg);
+	background-size: 150% 360%;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.empresario{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_empresario.jpg);
+	background-size: cover;
+	background-position: 70% top;
+	background-repeat: no-repeat;
+}
+
+.empresario1{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_empresario.jpg);
+	background-size: 120% 280%;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.trabajador{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_trabajador.jpg);
+	background-size: cover;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.trabajador1{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_trabajador.jpg);
+	background-size: 120% 277%;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.contacto{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_contacto.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.contacto1{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/bg_contacto.jpg);
+	background-size: 130% 400%;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+#quienes{
+	position: absolute;
+	clear: both;
+	width: 80%;
+	background-image: url(img/bg.png);
+	text-align: left;
+	padding: 2% 5%;
+	font-size: 100%;
+	line-height: 150%;
+	margin: 300px 0 15% 5%;
+}
+
+#emp{
+	position: absolute;
+	clear: both;
+	width: 80%;
+	background-image: url(img/bg.png);
+	text-align: left;
+	padding: 2% 5%;
+	font-size: 100%;
+	line-height: 150%;
+	margin: 300px 0 15% 5%;
+}
+
+#trab{
+	position: absolute;
+	clear: both;
+	width: 80%;
+	background-image: url(img/bg.png);
+	text-align: left;
+	padding: 2% 5%;
+	font-size: 100%;
+	line-height: 150%;
+	margin: 300px 0 15% 5%;
+}
+
+#contacto{
+	position: absolute;
+	clear: both;
+	width: 80%;
+	height: 730px;
+	text-align: left;
+	background-image: url(img/bg.png);
+	padding: 1% 5%;
+	font-size: 100%;
+	line-height: 150%;
+	margin: 300px 0 15% 5%;
+	font-weight: 400;
+}
+
+
+#home{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	position: relative;
+}
+
+#logo{
+	float: left;
+	position: absolute;
+	margin: 0 0 0 5%;
+}
+
+#menu{
+	position: relative;
+	float: right;
+	font-size: 100%;
+	margin: 1% 5% 0 0;
+	z-index: 10;
+}
+
+#footer{
+	width: 100%;
+	height: 12%;
+	bottom: 0;
+	position: fixed;
+	background-image: url(img/bg.png);
+	padding: 0 0 0 0;
+}
+
+.footer p{
+	margin: 1% 0 0 0;
+}
+
+.footer{
+	width: 80%;
+	text-align: left;
+	font-size: 50%;
+	float: left;
+	line-height: 150%;
+	padding: 0 0 0 3%;
+}
+
+.social{
+	float: right;
+	width: 15%;
+	text-align: center;
+	font-size: 50%;
+	margin: 0.5% 2% 0 0;
+
+}
+
+.input-xlarge{
+	width: 100%;
+	height: 25px;
+	font-size: 70%;
+	margin: 5px 0;
+}
+
+.input-xxlarge{
+	width: 98%;
+	font-size: 70%;
+	margin: 5px 0;
+}
+
+.azul01{
+	color: #075384;
+}
+
+.azul02{
+	color: #007bb3;
+}
+
+#edad{
+	float: left;
+	width: 50%;
+	margin: 5px 0 0 0;
+}
+
+#ciudad{
+	float: right;
+	width: 50%;
+	margin: 5px 0 0 0;
+}
+
+#sexo{
+	margin: 10px 0;
+}
+
+#sexo input{
+	margin: 0 10px;
+}
+
+.cnt input{
+	width: 80%;
+}
+
+#btn{
+	float: right;
+	margin: 30px 0 0 0;
+}
+
+a img{
+	border: 0;
+}
+
+select{
+	margin: 10px 0;
+	width: 90%;
+	font-size: 14px;
+}
+
+.uno{
+	width: 100%;
+	float: left;
+}
+
+
+
+.cnt{
+	width: 100%;
+	float: right;
+
+}
+
+
+
+#menu ul ul {
+	display: none;
+}
+
+#menu ul li:hover > ul {
+	display: block;
+}
+
+#menu ul {
+	background-image: url(img/bg.png);
+	padding: 0 0;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	margin: 0 0 15% 0;
+}
+
+#menu ul:after {
+	content: ""; clear: both; display: block;
+}
+
+
+#menu ul li:hover {
+	background: #007bb3;
+}
+
+#menu ul li:hover a {
+	color: #fff;
+}
+	
+#menu ul li a {
+	display: block; padding: 15px 20px;
+	color: #5d5e5e; text-decoration: none;
+}
+
+#menu ul ul {
+	background: #0d5384; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+
+#menu ul ul li {
+	float: none; 
+	border-top: 1px solid #fff;
+	position: relative;
+}
+
+#menu ul ul li a {
+	padding: 15px 20px;
+	color: #fff;
+}	
+
+#menu ul ul li a:hover {
+	background: #007bb3;
+}
+
+#menu ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+
+button{
+	height: 5%;
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+select, option{
+	font-family: 'Raleway', sans-serif;
+}
